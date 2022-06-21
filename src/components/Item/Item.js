@@ -21,8 +21,8 @@ export class Item extends React.Component {
                     <h1 className='left'>{this.props.priceFor}</h1>
                     <h1 className='left2'>{this.props.price}</h1>
                     <h1 className='right'>{this.props.title}</h1>
-                    <button class='btn' className='description' onClick={this.onButtonClickHandler}>
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <button className='btn' onClick={this.onButtonClickHandler}>
+                        <i className="fa fa-arrow-down" aria-hidden="true"></i>
                     </button> 
                     <div> 
                         {this.state.showMessage && <h1 className='bottom'>{this.props.description}</h1> }               
