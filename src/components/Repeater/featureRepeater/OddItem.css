@@ -1,0 +1,33 @@
+:root {
+    --description-btn-color: rgb(172, 171, 171);
+    --repeater-color:  rgb(0, 0, 0);
+}
+
+.oddIcon { grid-area: icon;}
+.oddIconImg{
+  height: 90%;
+  width: 63%;
+}
+.oddIconName { 
+  grid-area: iconName; 
+  margin-left: 0%;
+}
+
+.oddFeatureitemRepeater {
+  display: grid;
+  grid-template-areas:
+    'iconName iconName iconName iconName icon';
+  gap: 1px;
+  padding: 1px;
+}
+
+.oddFeatureitemRepeater > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.oddDivRepeater{
+  margin-right: 27%;
+}

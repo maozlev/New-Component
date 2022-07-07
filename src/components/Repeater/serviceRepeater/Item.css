@@ -1,0 +1,47 @@
+:root {
+  --description-btn-color: rgb(255, 255, 255);
+}
+
+.btnDiv {
+  backface-visibility: hidden;
+  grid-area: btnDiv;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.btn {
+  border-width: 0px;
+  width: 100%;
+  background-color: white;
+  font-size: 20px;
+}
+
+.title {
+  grid-area: title;
+}
+.priceType {
+  grid-area: priceType;
+}
+.price {
+  grid-area: price;
+}
+.description {
+  grid-area: description;
+  /* float: right; */
+  margin-left: 50%;
+}
+
+.serviceItemRepeater {
+  display: grid;
+  grid-template-areas:
+    "priceType priceType price price btnDiv btnDiv title"
+    "description description description description description description description";
+}
+
+.serviceItemRepeater > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}

@@ -1,0 +1,33 @@
+:root {
+    --description-btn-color: rgb(172, 171, 171);
+    --repeater-color:  rgb(0, 0, 0);
+}
+
+.icon { grid-area: icon;}
+.iconImg{
+  height: 90%;
+  width: 110%;
+}
+.iconName { 
+  grid-area: iconName; 
+  margin-left: -100%;
+}
+
+.featureitemRepeater {
+  display: grid;
+  grid-template-areas:
+    'iconName iconName iconName iconName icon';
+  gap: 1px;
+  padding: 1px;
+}
+
+.featureitemRepeater > div {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.divRepeater{
+  margin-left: 45%;
+}
